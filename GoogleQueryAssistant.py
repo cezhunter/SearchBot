@@ -14,7 +14,7 @@ def main():
                 #loop through options
                 for option in optionList:
                         #Make the option lower case in case user enters capital letters and remove all whitespace
-                        opt = option.replace(" ", "").lower()
+                        opt = "".join(option.split()).lower()
                         if  opt == "remove":
                                 query = queryRemove(query)
                                 noOptions = False
